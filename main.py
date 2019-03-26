@@ -47,7 +47,7 @@ login('your username', 'your password')
 
 
 # 开始爬取
-def complex_everyday_list(base_url, start_page, end_page):
+def overall_daily_rankings(base_url, start_page, end_page):
     for i in range(start_page, end_page + 1):
         print('正在获取页面：%s' % base_url + str(i))
 
@@ -90,4 +90,4 @@ def complex_everyday_list(base_url, start_page, end_page):
     driver.close()
 
 
-complex_everyday_list(url, 1, 3)
+overall_daily_rankings(url, 1, 3)
