@@ -14,7 +14,7 @@ if not os.path.exists(img_base_path):
 
 options = Options()
 options.add_argument('--proxy-server=socks5://localhost:1080')
-# options.add_argument('--headless')  # 无头模式
+options.add_argument('--headless')  # 无头模式
 driver = webdriver.Chrome(options=options)
 
 
